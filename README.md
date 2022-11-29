@@ -9,13 +9,30 @@ The goal of this application is to simulate a site to sell/buy candles. The idea
 
 ### Usability Principles Considered
 
-I think the Heirarchy of test and components makes sense here. I also aimed to make the learnability and memorability of the site good.
+I paid attentiion to the the efficiency of the app. It is easy and intuitive to add and remove items from the cart. It is also clear to see how to filter and sort items shown. I used hierarchy principles to organize the page as well.
 
 ### Organization of Components
 
-There are 
+My components are:
+App
+DecreaseItemCount
+IncreaseItemCount
+ShopItemGallery
+ShopItemCart
+
+App is the main component on my page.
+
+DecreaseItemCount and IncreaseItemCount are called within ShopItemCart
+
+ShopItemGallery and ShopItemCart are called within App to represent the Shop Item in the Gallery and Cart respectively.
 
 ### How Data is Passed Down Through Components
 
+Through states defined in App and through functional component arguments.
+
 ### How the User Triggers State Changes
+
+The User triggers state changes by selecting items from the dropdowns in my makeshift navbar or by using the add to cart buttons or the increase or decease buttons in each cart item.
+
+
 
